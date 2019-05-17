@@ -1,0 +1,192 @@
+<!doctype html>
+
+<html>
+<head>
+		<title>Energia Eolica</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Bootstrap HTML5">
+        <meta name="keywords" content="HTML5, CSS3, JavaScript">
+ 
+       <script type="text/javascript" src="dist/zebra_dialog.min.js"></script>
+	   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/eloo.js"></script>
+	
+	   <link rel="stylesheet" href="dist/css/materialize/zebra_dialog.css">
+       
+        <link rel="stylesheet" href="./css/stylesheet.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+     
+        <script>
+            SyntaxHighlighter.defaults['toolbar'] = false;
+            SyntaxHighlighter.all();
+        </script>
+</head>
+
+<body>
+    <section class="hero is-info">
+	<div class="hero-body" class="container">
+	
+            <a title="Logo1" href="bulma.html"><button class="button is-info"><font size=6>Energia Eólica</font></button></a>
+
+	</div>
+	</section>
+	
+	<div class="columns">
+  <div class="column">
+    <p class="notification is-info"><a href="sub1.html"><button class="button is-info">Ventajas</button></a></p>
+	
+  </div>
+  
+  <div class="column">
+    <p class="notification is-info"><a href="sub2.html"><button class="button is-info"> Desventajas</button></a></p>
+	
+  </div>
+  
+  <div class="column">
+    <p class="notification is-info"><a href="sub3.html"><button class="button is-info">Energia Eólica en América Latina</button></a></p>
+	
+  </div>
+  
+  <div class="column">
+    <p class="notification is-info"><a href="sub4.html"><button class="button is-info">Paises que la implementan</button></a></p>
+	
+  </div>
+  
+  <div class="column">
+    <p class="notification is-info"><a href="quiz5.html"><button class="button is-info">Quiz</button></a></p>
+	
+  </div>
+
+</div>
+		
+<div class="row"> 
+  <div class="col-sm-2">
+  
+   
+
+ <br><h3>Preguntas</a></h3><br>
+ 
+  </div>
+  <div class="col-sm">
+
+<form name="form" onSubmit="return score()">
+	
+	<div id="aplicacion">
+	<h2>1: Con que funciona este tipo de energia?</h2>    
+    <p>
+      <input type="radio" name="q1" value="Co2" v-model="estudios" id="Co2"><label for="universitarios">Con agua</label> 
+      
+    </p>
+    <p>
+      <input type="radio" name="q1" value="Alcohol" v-model="Alcohol" id="Alcohol">
+      <label>Con aire</label>
+    </p>
+    <p>
+      <input type="radio" name="q1" value="H2" v-model="estudios" id="H2">
+      <label for="universitarios">Con el sol</label>
+    </p>
+
+	
+<br><h2>2: Es un tipo de energia...</h2>
+
+<p>
+      <input type="radio" name="q2" value="Hidrogeno acumulado" v-model="estudios1" id="Hidrogeno acumulado"><label for="universitarios">Inagotable</label> 
+      
+    </p>
+    <p>
+      <input type="radio" name="q2" value="H2" v-model="estudios1" id="H2">
+      <label for="universitarios">Renovable</label>
+    </p>
+    <p>
+      <input type="radio" name="q2" value="Co" v-model="estudios1" id="Co">
+      <label>Todas las anteriores</label>
+    </p>
+
+	
+	
+<br>	<h2>3: Cuales de las siguientes opciones no es una ventaja?</h2>
+	<p>
+      <input type="radio" name="q3" value="Hidrogeno acumulado" v-model="estudios2" id="Hidrogeno acumulado"><label>Energia no almacenable</label> 
+      
+    </p>
+    <p>
+      <input type="radio" name="q3" value="Co2" v-model="estudios2" id="Co2">
+      <label for="universitarios">Ocupa poco espacio</label>
+    </p>
+    <p>
+      <input type="radio" name="q3" value="monoxido de carbono, gases inflamables" v-model="estudios2" id="monoxido de carbono, gases inflamables">
+      <label for="universitarios">No contamina</label>
+    </p>
+
+	
+   
+	
+	<br><br><h2>4: Cuales de las siguientes opciones no es una desventaja?</h2>
+		
+	<p>
+      <input type="radio" name="q4" value="monoxido de carbono, gases inflamables" v-model="estudios3" id="monoxido de carbono, gases inflamables"><label>El viento no esta garantizado</label> 
+      
+    </p>
+    <p>
+      <input type="radio" name="q4" value="Co2" v-model="estudios3" id="Co2">
+      <label for="universitarios">El impacto en el paisaje a veces genera
+malestar en la población</label>
+    </p>
+    <p>
+      <input type="radio" name="q4" value="calidad del aire" v-model="estudios3" id="calidad del aire">
+      <label for="universitarios">El coste de sus turbinas electricas es bajo</label>
+    </p>
+
+	
+
+
+	
+	
+	<br><h2>5: Que paises implementan este tipo de energia?</h2>
+	  <p>
+      <input type="radio" name="q5" value="Co2" v-model="estudios4" id="Co2">
+      <label for="universitarios">Argentina</label> 
+	  </p>
+	  <p>
+      <input type="radio" name="q5" value="calidad del aire" v-model="estudios4" id="calidad del aire"><label>Brasil</label> 
+       </p>
+    <p>
+      <input type="radio" name="q5" value="monoxido de carbono, gases inflamables" v-model="estudios4" id="monoxido de carbono, gases inflamables">
+      <label for="universitarios">Todas son correctas</label>
+    </p>
+
+	
+	
+	
+	
+<center>
+	<input name="button" type="submit" class="secondary" id="sendA" value="Correct">
+</center>
+	<br>
+	<p id="rada"></p>
+	
+		
+  </div>
+
+  <script src="./js/vue.js"></script>
+  <script>
+    var app=new Vue({
+      el: '#aplicacion',
+      data:{ 
+        estudios: '',
+		  estudios1: '',
+		  	  estudios2: '',
+				estudios3: '',
+				  	  estudios4: '',
+			  	  
+      }
+    })
+  </script>
+</form>
+
+</body>
+
+</html>
